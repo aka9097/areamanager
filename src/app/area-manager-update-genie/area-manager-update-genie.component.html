@@ -1,0 +1,34 @@
+<h3>Update Genie</h3>
+<div class="container mt-5 sizing">
+<div style="width: 400px;">
+  <form>
+
+    <div class="form-group">
+        <label for="">Severity</label>
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="genie.severity" id="severity"
+            name="severity">
+            <option value="{{genie.severity}}" selected>{{genie.severity}}</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Description</label>
+        <textarea name="suggestion" id="suggestion" cols="20" rows="5" class="form-control"
+            [(ngModel)]="genie.description"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="name">Status</label>
+        <input type="text" class="form-control" id="status" required [(ngModel)]="genie.status" name="status">
+      </div><br>
+    <button type="submit" class="btn btn-success" (click)="updateGenie()">Update</button>
+  </form>
+</div>
+</div>
+
+
+
+    
