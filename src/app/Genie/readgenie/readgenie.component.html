@@ -1,0 +1,34 @@
+<div class="maindiv">
+<div class="container mt-5">
+
+  <h1>{{user.email}}</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ReferenceId</th>
+      <th scope="col">Name</th>
+      <th scope="col">Severity</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+
+      <tr *ngFor = "let genie of genie" >
+        <td>{{genie.id}}</td>
+        <td>{{genie.name}}</td>
+        <td>{{genie.severity}}</td>
+        <td>{{genie.description}}</td>
+        <td>{{genie.date}}</td>
+        <td>{{genie.status}}</td>
+    </tr>
+    
+  
+    
+  </tbody>
+  </table>
+  <button class="btn btn-primary"  [routerLink]="['/userdashboard']" >Back</button> 
+  <!-- <button class="btn btn-primary"  [routerLink]="['/index']" >Home</button>  -->
+</div>
+</div>

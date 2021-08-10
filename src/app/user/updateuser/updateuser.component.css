@@ -1,0 +1,13 @@
+.sizing
+{
+    width: 60%;
+    
+}
+
+.maindiv
+{
+    position: absolute;
+    background-image: url(../../../assets/solidimage.jpg);
+    height: 150%;
+    width: 100%;
+}

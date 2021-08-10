@@ -1,0 +1,80 @@
+<div class="maindiv">
+<div class="container mt-5 sizing">
+
+
+    <form>
+        <div class="form-group">
+            <label for="">Aadhar Number</label>
+            <input type="text" class="form-control" id="aid" name="aid" [(ngModel)]="user.aadhar" readonly=true>
+            </div>
+<br>
+
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.userName" >
+            </div>
+<br>
+<div class="form-group">
+    <label for="">Email</label>
+    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="user.email" readonly=true>
+    </div>
+<br>
+
+   
+    <input type="text" class="form-control" id="password" name="password" [(ngModel)]="user.password" hidden>
+    
+<br>
+
+<div class="form-group">
+    <label for="">Phone Number</label>
+    <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="user.phone">
+    </div>
+<br>
+
+<div class="form-group">
+    <label for="">Flat Number</label>
+    <input type="text" class="form-control" id="fno" name="fno" [(ngModel)]="user.address.flatNo">
+    </div>
+<br>
+
+<div class="form-group">
+    <label for="">Address 1</label>
+    <input type="text" class="form-control" id="add1" name="add1" [(ngModel)]="user.address.address1">
+    </div>
+<br>
+
+<div class="form-group">
+    <label for="">Address 2</label>
+    <input type="text" class="form-control" id="add2" name="add2" [(ngModel)]="user.address.address2">
+    </div>
+<br>
+            <div class="form-group">
+                <label for="">Location</label>
+                <br>
+             
+            <select class="form-select" aria-label="Default select example"  [(ngModel)]="user.location.id" id="location" name="location" >
+              
+              <option *ngFor="let loc of location1" [value]="loc.id" >{{loc.locationName}}</option>
+                <!-- <option value=2 >MEJASTIC</option>
+                <option value=3 >RAJAJINAGAR</option> -->
+              </select>
+
+            </div>
+<br>
+         
+
+          
+
+                        <br>
+
+
+                       <button class="btn btn-primary"  (click)="update()" >Update</button> 
+
+
+        
+    </form>
+    <br>
+    <button class="btn btn-primary"  [routerLink]="['/userdashboard']" >Back</button> 
+    <!-- <button class="btn btn-primary"  [routerLink]="['/index']" >Home</button>  -->
+</div>
+</div>

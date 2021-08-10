@@ -1,0 +1,16 @@
+
+.sizing
+{
+    width: 60%;
+    border: 2px solid gray;
+    padding: 15px;
+    
+}
+.maindiv{
+
+    position: absolute;
+    background-image: url(../../assets/solidimage.jpg);
+
+    width: 100%;
+
+}

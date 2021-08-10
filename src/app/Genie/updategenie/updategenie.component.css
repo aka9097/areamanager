@@ -1,0 +1,9 @@
+.maindiv{
+
+    position: absolute;
+    background-image: url(../../../assets/solidimage.jpg);
+    background-size: cover;
+    height: 120%;
+    width: 100%;
+
+}

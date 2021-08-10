@@ -1,0 +1,23 @@
+
+<div class="maindiv">
+    <div class="container mt-5 sizing">
+    
+    
+        <form>
+    
+            <div class="form-group">
+                <label for="">ReferenceId</label>
+                <input type="text" class="form-control" [(ngModel)]="id" id="id" name="id" >
+                </div>
+                <br>
+    
+                           <button class="btn btn-primary" (click)="delete()"  >UnRaise Genie</button> 
+    
+    
+            
+        </form>
+        <br>
+        <button class="btn btn-primary"  [routerLink]="['/admin']" >Back</button> &nbsp;
+        <!-- <button class="btn btn-primary"  [routerLink]="['/index']" >Home</button>  -->
+    </div>
+    </div>
