@@ -1,0 +1,17 @@
+.sizing
+{
+    padding-left: 20%;
+}
+
+ .maindiv{
+     position: absolute;
+    background-image: url(../../assets/foruserdashboard.png);
+    height: 100%;
+    width: 100%;
+    
+} 
+body
+{
+    background-color: darkgray;
+}
+

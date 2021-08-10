@@ -3,32 +3,54 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AreaManagerLoginComponent } from './area-manager-login/area-manager-login.component';
-import { AreaManagerAddGenieComponent } from './area-manager-add-genie/area-manager-add-genie.component';
-import { AreaManagerListGenieComponent } from './area-manager-list-genie/area-manager-list-genie.component';
-import { AreaManagerUpdateGenieComponent } from './area-manager-update-genie/area-manager-update-genie.component';
-import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { UserdashboardComponent } from './userdashboard/userdashboard.component';
+import { IndexComponent } from './index/index.component';
+import { RestService } from './rest.service';
 import { FormsModule } from '@angular/forms';
-import { AreaManagerUserListComponent } from './area-manager-user-list/area-manager-user-list.component';
-import { AreaManagerUpdatePasswordComponent } from './area-manager-update-password/area-manager-update-password.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AddgenieComponent } from './Genie/addgenie/addgenie.component';
+import { UpdategenieComponent } from './Genie/updategenie/updategenie.component';
+import { DeletegenieComponent } from './Genie/deletegenie/deletegenie.component';
+import { ReadgenieComponent } from './Genie/readgenie/readgenie.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { UpdatepasswordComponent } from './user/updatepassword/updatepassword.component';
+import { UpdateuserComponent } from './user/updateuser/updateuser.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminaddgenieComponent } from './admin/adminaddgenie/adminaddgenie.component';
+import { AdmineditgenieComponent } from './admin/admineditgenie/admineditgenie.component';
+import { AdmindeletegenieComponent } from './admin/admindeletegenie/admindeletegenie.component';
+import { AdminreadgenieComponent } from './admin/adminreadgenie/adminreadgenie.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AreaManagerLoginComponent,
-    AreaManagerAddGenieComponent,
-    AreaManagerListGenieComponent,
-    AreaManagerUpdateGenieComponent,
-    AreaManagerUserListComponent,
-    AreaManagerUpdatePasswordComponent
+    LoginComponent,
+    UserdashboardComponent,
+    IndexComponent,
+    AddgenieComponent,
+    UpdategenieComponent,
+    DeletegenieComponent,
+    ReadgenieComponent,
+    RegistrationComponent,
+    UpdatepasswordComponent,
+    UpdateuserComponent,
+    AdminComponent,
+    AdminaddgenieComponent,
+    AdmineditgenieComponent,
+    AdmindeletegenieComponent,
+    AdminreadgenieComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [RestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

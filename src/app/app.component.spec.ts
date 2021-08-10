@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'area-management-fronted'`, () => {
+  it(`should have as title 'projectsample'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('area-management-fronted');
+    expect(app.title).toEqual('projectsample');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('area-management-fronted app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('projectsample app is running!');
   });
 });

@@ -1,0 +1,48 @@
+<div class="maindiv">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Welcome </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav " >
+              <!-- PROFILE DROPDOWN - scrolling off the page to the right -->
+              <li class="nav-item dropdown ">
+                  <a href="#" class="nav-link dropdown-toggle" id="navDropDownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile
+          </a>
+                  <div class="dropdown-menu" aria-labelledby="navDropDownLink">
+                      <a class="dropdown-item" routerLink="/updateUser">Profile</a>
+                      <a class="dropdown-item"  routerLink="/updatePassword"  >UpdatePassword</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+              </li>
+          </ul>
+     
+          </div>
+        </div>
+      </nav>
+    
+     
+    
+      <div class="container mt-5 sizing">
+      
+      <a  routerLink="/adminaddgenie"  type="button" class="btn btn-primary" >Raise Genie</a> &nbsp;
+      <a  routerLink="/admineditgenie" type="button" class="btn btn-primary" >Edit Genie</a> &nbsp;
+      <a  routerLink="/admindeletegenie" type="button" class="btn btn-primary">Delete Genie</a> &nbsp;
+      <a   routerLink="/adminreadgenie"  type="button" class="btn btn-primary"  >Genie Details</a> &nbsp;
+      <!-- <a  [routerLink]="['/readgenie']" [queryParams]="{user2: user | json}"  type="button" class="btn btn-primary"  >Genie Details</a> &nbsp; -->
+    </div>
+    
+    <hr>
+    
+    
+    <!-- <a   type="button" class="btn btn-primary" (click)="ngOnInit1()" >Get All The Genies Raised In The Location</a> &nbsp; -->
+    
+    
+   
+    </div>
+    
+      

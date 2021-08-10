@@ -1,0 +1,73 @@
+
+<div class="maindiv">
+    <div class="container mt-5 sizing">
+       
+    
+        <form>
+    
+            <div class="form-group">
+                <label for="">ReferenceId</label>
+                <input type="text" class="form-control" [(ngModel)]="id" id="id" name="id" >
+                </div>
+                <br>
+                <button class="btn btn-primary"  (click)="getGenie()" >Get Raised Genie Data</button> 
+                </form>
+    
+                <hr>
+    
+        <form *ngIf="genie1.id > 0">
+    
+           
+            <div class="form-group" >
+                <label for="">Name</label>
+                <input type="text" class="form-control"  id="name1" name="name1" [(ngModel)]="genie1.name">
+                </div>
+    <br>
+    
+    <div class="form-group">
+        <label for="">date</label>
+        <input type="date" class="form-control" [(ngModel)]="genie1.date" id="date" name="date" >
+        </div>
+    <br>
+                <div class="form-group">
+                    <label for="">Severity</label>
+                <select class="form-select" aria-label="Default select example" [(ngModel)]="genie1.severity" id="severity" name="severity">
+                    <option value="{{genie1.severity}}" selected>{{genie1.severity}}</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                  </select>
+                </div>
+    <br>
+    
+                <div class="form-group">
+                    <label for="">Status</label>
+                <select class="form-select" aria-label="Default select example"  id="status" name="status">
+                   
+                    <option [value]="true" [(ngModel)]="genie1.status">True</option>
+                    <option [value]="false" [(ngModel)]="genie1.status">False</option>
+        
+                  </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">Description</label>
+                    <textarea name="suggestion" id="suggestion" cols="20" rows="5" class="form-control" [(ngModel)]="genie1.description"></textarea>
+                    </div>
+    
+    
+              
+    
+                            <br>
+    
+    
+                           <button class="btn btn-primary" (click)="updateGenie()">Update Genie</button> 
+    
+    
+            
+        </form>
+        <br>
+        <button class="btn btn-primary"  [routerLink]="['/admin']" >Back</button> &nbsp;
+        <!-- <button class="btn btn-primary"  [routerLink]="['/index']" >Home</button>  -->
+    </div>
+    </div>
